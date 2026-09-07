@@ -1,6 +1,5 @@
-package desafio3;
+package Desafios.desafio3;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 

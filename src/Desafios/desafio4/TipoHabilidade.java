@@ -1,4 +1,4 @@
-package desafio4;
+package Desafios.desafio4;
 
 public enum TipoHabilidade {
     TAIJUTSU,
