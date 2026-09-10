@@ -22,7 +22,7 @@ public class Uchiha extends Ninja implements SharinganInterface {
 
     @Override
     public void inteligenciaDeCombate() {
-        System.out.println("Meu nome é " + nome + " e essa é minha inteligencia de batalha ninja");
+        System.out.println("Meu nome é " + getNome() + " e essa é minha inteligencia de batalha ninja");
     }
 
     @Override

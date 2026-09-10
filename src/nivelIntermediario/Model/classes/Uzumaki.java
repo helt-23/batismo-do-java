@@ -10,7 +10,7 @@ public class Uzumaki extends Ninja {
     }
 
     public void modoSabioAtivado() {
-        System.out.println("Meu nome é " + nome + " e eu ativei o modo Sábio.");
+        System.out.println("Meu nome é " + getNome() + " e eu ativei o modo Sábio.");
     }
 
 }

@@ -4,20 +4,15 @@ import nivelIntermediario.Interface.EstrategiaDeBatalha;
 import nivelIntermediario.enums.NivelNinja;
 
 public abstract class Ninja implements EstrategiaDeBatalha {
-    public String nome;
-    public int idade;
-    public String aldeia;
-    int numeroDeMissoesConcluidas;
+    private String nome;
+    private int idade;
+    private String aldeia;
+    private int numeroDeMissoesConcluidas;
     NivelNinja rank;
-
-    //TODO: Incluir 2 novos atributos : numeroDeMissoesConcluidas, rank
-    //TODO: rank: Gennin, chunnin, jounnin, Hokage
 
     public Ninja() {
     }
 
-    // TODO NINJA VAI FAZER OBRIGATORIAMENTE
-    // todo metodo final não pode ser reescrito
     public final void tacarKunai(){
         System.out.println("metodo da classe mãe!");
     }
@@ -28,7 +23,6 @@ public abstract class Ninja implements EstrategiaDeBatalha {
         this.aldeia = aldeia;
     }
 
-    //TODO: sobrecarga do construtor chamando os novos atributos.
     //sobrecarga de metodos não precisa redeclarar o construtor, só os novos atributos.
     public Ninja(String nome, int idade, String aldeia, int numeroDeMissoesConcluidas, NivelNinja rank) {
         this(nome, idade, aldeia);
@@ -50,6 +44,46 @@ public abstract class Ninja implements EstrategiaDeBatalha {
         } else{
             System.out.println("Seu Qi é " +qi + " e você é precisa treinar mais!");
         }
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public String getAldeia() {
+        return aldeia;
+    }
+
+    public void setAldeia(String aldeia) {
+        this.aldeia = aldeia;
+    }
+
+    public int getNumeroDeMissoesConcluidas() {
+        return numeroDeMissoesConcluidas;
+    }
+
+    public void setNumeroDeMissoesConcluidas(int numeroDeMissoesConcluidas) {
+        this.numeroDeMissoesConcluidas = numeroDeMissoesConcluidas;
+    }
+
+    public NivelNinja getRank() {
+        return rank;
+    }
+
+    public void setRank(NivelNinja rank) {
+        this.rank = rank;
     }
 
     @Override
