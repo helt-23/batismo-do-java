@@ -15,6 +15,7 @@ public class Main {
 
 
         System.out.println("\n================ Naruto ================");
+        naruto.tacarKunai();
         System.out.println(naruto.nome);
         System.out.println(naruto);
     }

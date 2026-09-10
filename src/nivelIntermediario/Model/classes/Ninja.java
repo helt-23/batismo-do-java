@@ -16,6 +16,12 @@ public abstract class Ninja implements EstrategiaDeBatalha {
     public Ninja() {
     }
 
+    // TODO NINJA VAI FAZER OBRIGATORIAMENTE
+    // todo metodo final não pode ser reescrito
+    public final void tacarKunai(){
+        System.out.println("metodo da classe mãe!");
+    }
+
     public Ninja(String nome, int idade, String aldeia) {
         this.nome = nome;
         this.idade = idade;
